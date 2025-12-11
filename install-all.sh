@@ -9,5 +9,5 @@
 
 ./remove-webapps.sh
 ./remove-packages.sh
-./set-shell.sh
+./set-zsh.sh
 
