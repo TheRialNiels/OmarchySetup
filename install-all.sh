@@ -7,5 +7,7 @@
 ./install-dotfiles.sh
 ./install-hyprland-overrides.sh
 
+./remove-webapps.sh
+./remove-packages.sh
 ./set-shell.sh
 
