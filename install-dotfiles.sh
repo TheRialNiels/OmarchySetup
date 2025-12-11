@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 ORIGINAL_DIR=$(pwd)
