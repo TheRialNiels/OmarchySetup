@@ -24,11 +24,13 @@ fi
 
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
-  echo "removing old configs"
-  rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.cache/nvim/
+  echo "Removing old configs"
+  rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.cache/nvim/ ~/.config/kitty ~/.config/waybar
 
   cd "$REPO_NAME"
-  #stow zshrc
+  stow --adopt kitty
+  stow --adopt waybar
+  stow --adopt zshrc
 else
   echo "Failed to clone the repository."
   exit 1
