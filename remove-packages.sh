@@ -18,6 +18,8 @@ pkg_names=(
   "1password-cli"
   "pinta"
   "typora"
+  "signal-desktop"
+  "xournalpp"
 )
 
 # Initialize an array to hold the names of packages that need to be removed
