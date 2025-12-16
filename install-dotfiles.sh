@@ -29,6 +29,7 @@ if [ $? -eq 0 ]; then
 
   cd "$REPO_NAME"
   stow --adopt kitty
+  stow --adopt nvim
   stow --adopt waybar
   stow --adopt zshrc
 else
