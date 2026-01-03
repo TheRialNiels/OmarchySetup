@@ -2,6 +2,7 @@
 
 # Install all packages in order
 ./install-zsh.sh
+./install-zsh-plugins.sh
 ./install-kitty.sh
 ./install-stow.sh
 ./install-dotfiles.sh
