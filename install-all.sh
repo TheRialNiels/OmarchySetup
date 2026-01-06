@@ -6,6 +6,8 @@
 ./install-kitty.sh
 ./install-stow.sh
 ./install-gemini-cli.sh
+./install-zellij.sh
+./install-opencode.sh
 ./install-dotfiles.sh
 ./install-hyprland-overrides.sh
 #./install-hyprsunset-overrides.sh # Not working
