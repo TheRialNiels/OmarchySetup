@@ -12,6 +12,7 @@
 ./install-hyprland-overrides.sh
 #./install-hyprsunset-overrides.sh # Not working
 
+./set-omarchy-configs.sh
 ./remove-webapps.sh
 ./remove-packages.sh
 ./set-zsh.sh
