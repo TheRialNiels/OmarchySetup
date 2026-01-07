@@ -1,16 +1,16 @@
 #!/bin/bash
 
 _checkIsInstalled() {
-    local package=$1
+  local package=$1
 
-    # Check if the package is installed
-    if pacman -Qq "$package" &>/dev/null; then
-      echo 0 # true
-      return
-    else
-      echo 1 # false
-      return
-    fi
+  # Check if the package is installed
+  if pacman -Qq "$package" &>/dev/null; then
+    echo 0 # true
+    return
+  else
+    echo 1 # false
+    return
+  fi
 }
 
 pkg_names=(
@@ -29,7 +29,7 @@ packagesToRemove=()
 for package in ${pkg_names[@]}; do
   # Check if the package is installed based on the package manager
   if [[ $(_checkIsInstalled "$package") == 0 ]]; then
-      packagesToRemove+=("${package}")
+    packagesToRemove+=("${package}")
   fi
 done
 
@@ -43,10 +43,15 @@ else
 
     # Check if the package was removed successfully
     if [[ $? == 0 ]]; then
-        echo "Package '${package}' removed successfully"
+      echo "Package '${package}' removed successfully"
     else
-        echo "Failed to remove package '${package}'"
+      echo "Failed to remove package '${package}'"
     fi
   done
 fi
 
+# Remove missing icons
+if [[ -f ~/.local/share/applications/typora.desktop ]]; then
+  echo 'Removing typora icon...'
+  rm ~/.local/share/applications/typora.desktop
+fi
