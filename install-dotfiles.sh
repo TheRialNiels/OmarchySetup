@@ -5,34 +5,35 @@ REPO_URL="https://github.com/TheRialNiels/dotfiles"
 REPO_NAME="dotfiles"
 
 is_stow_installed() {
-	pacman -Qi "stow" &>/dev/null
+  pacman -Qi "stow" &>/dev/null
 }
 
 if ! is_stow_installed; then
-	echo "Install stow first"
-	exit 1
+  echo "Install stow first"
+  exit 1
 fi
 
 cd ~
 
 # Check if the repository already exists
 if [ -d "$REPO_NAME" ]; then
-	echo "Repository '$REPO_NAME' already exists. Skipping clone"
+  echo "Repository '$REPO_NAME' already exists. Skipping clone"
 else
-	git clone "$REPO_URL"
+  git clone "$REPO_URL"
 fi
 
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
-	echo "Removing old configs"
-	rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/ ~/.config/kitty ~/.config/waybar
+  echo "Removing old configs"
+  rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/ ~/.config/kitty ~/.config/waybar
 
-	cd "$REPO_NAME"
-	stow --adopt kitty
-	stow --adopt nvim
-	stow --adopt waybar
-	stow --adopt zshrc
+  cd "$REPO_NAME"
+  stow --adopt kitty
+  stow --adopt nvim
+  stow --adopt waybar
+  stow --adopt zellij
+  stow --adopt zshrc
 else
-	echo "Failed to clone the repository."
-	exit 1
+  echo "Failed to clone the repository."
+  exit 1
 fi
