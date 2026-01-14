@@ -5,6 +5,7 @@
 ./install-zsh-plugins.sh
 ./install-kitty.sh
 ./install-stow.sh
+./install-vial.sh
 ./install-gemini-cli.sh
 ./install-zellij.sh
 ./install-opencode.sh
