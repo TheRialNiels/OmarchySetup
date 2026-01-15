@@ -35,7 +35,7 @@ done
 
 # Check if there are any packages that need to be removed
 if [[ ${#packagesToRemove[@]} == 0 ]]; then
-  echo "All ${packageManager} packages are already removed"
+  echo "All packages are already removed"
 else
   for package in "${packagesToRemove[@]}"; do
     echo "Removing ${package}..."
