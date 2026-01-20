@@ -9,6 +9,8 @@
 ./install-gemini-cli.sh
 ./install-zellij.sh
 ./install-bibata-cursor.sh
+./install-fnm.sh
+./install-bruno.sh
 ./install-dotfiles.sh
 ./install-hyprland-overrides.sh
 #./install-hyprsunset-overrides.sh # Not working
