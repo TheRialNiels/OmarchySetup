@@ -11,6 +11,7 @@
 ./install-bibata-cursor.sh
 ./install-fnm.sh
 ./install-bruno.sh
+./install-zed.sh
 ./install-dotfiles.sh
 ./install-hyprland-overrides.sh
 #./install-hyprsunset-overrides.sh # Not working
