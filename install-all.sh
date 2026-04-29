@@ -6,13 +6,15 @@
 ./install-kitty.sh
 ./install-stow.sh
 ./install-vial.sh
-./install-gemini-cli.sh
-./install-zellij.sh
+# ./install-gemini-cli.sh
+# ./install-zellij.sh
 ./install-bibata-cursor.sh
-./install-fnm.sh
+# ./install-fnm.sh
 ./install-bruno.sh
 ./install-zed.sh
+./install-packages.sh
 ./install-dotfiles.sh
+./install-tmux-plugin-manager.sh
 ./install-hyprland-overrides.sh
 #./install-hyprsunset-overrides.sh # Not working
 

@@ -7,6 +7,7 @@ omarchy-webapp-remove Figma
 omarchy-webapp-remove Fizzy
 omarchy-webapp-remove 'Google Contacts'
 omarchy-webapp-remove 'Google Messages'
+omarchy-webapp-remove 'Google Maps'
 omarchy-webapp-remove 'Google Photos'
 omarchy-webapp-remove HEY
 omarchy-webapp-remove WhatsApp
