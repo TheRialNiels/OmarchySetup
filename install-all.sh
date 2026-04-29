@@ -6,10 +6,12 @@
 ./install-kitty.sh
 ./install-stow.sh
 ./install-vial.sh
+./install-go.sh
 # ./install-gemini-cli.sh
 # ./install-zellij.sh
 ./install-bibata-cursor.sh
 # ./install-fnm.sh
+./install-brew.sh
 ./install-bruno.sh
 ./install-zed.sh
 ./install-packages.sh
