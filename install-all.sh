@@ -14,6 +14,7 @@
 ./install-brew.sh
 ./install-bruno.sh
 ./install-zed.sh
+./install-lsof.sh
 ./install-packages.sh
 ./install-dotfiles.sh
 ./install-tmux-plugin-manager.sh
