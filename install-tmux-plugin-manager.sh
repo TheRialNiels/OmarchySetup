@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Install tpm
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm && ~/.tmux/plugins/tpm/bin/install_plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
