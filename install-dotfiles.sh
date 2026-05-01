@@ -25,7 +25,7 @@ fi
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
   echo "Removing old configs"
-  rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/ ~/.config/waybar ~/.config/kitty ~/.config/tmux
+  rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.local/state/nvim/ ~/.cache/nvim/ ~/.config/waybar ~/.config/kitty ~/.config/tmux ~/.config/fcitx5
 
   cd "$REPO_NAME"
   stow --adopt kitty
@@ -34,6 +34,7 @@ if [ $? -eq 0 ]; then
   stow --adopt waybar
   # stow --adopt zellij
   stow --adopt tmux
+  stow --adopt fcitx5
   stow --adopt zshrc
 else
   echo "Failed to clone the repository."
