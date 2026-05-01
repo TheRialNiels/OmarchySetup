@@ -16,6 +16,7 @@
 ./install-zed.sh
 ./install-lsof.sh
 ./install-packages.sh
+./install-pnpm.sh
 ./install-dotfiles.sh
 ./install-tmux-plugin-manager.sh
 ./install-hyprland-overrides.sh

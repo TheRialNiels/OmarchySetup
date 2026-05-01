@@ -9,3 +9,6 @@ omarchy-theme-set Nord
 #   # Enable
 #   omarchy-toggle-suspend
 # fi
+
+# Activate node tool
+mise settings add idiomatic_version_file_enable_tools node
